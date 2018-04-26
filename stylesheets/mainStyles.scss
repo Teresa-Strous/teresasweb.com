@@ -1,0 +1,64 @@
+
+//ideas: https://www.webcoda.com.au/?gclid=Cj0KCQjwqYfWBRDPARIsABjQRYwknz38UpgY41aopNDIHpfTJrdPeUFRK8k28s15UyUN8wGOH6G4K4oaArigEALw_wcB
+
+$bg-light: #EFEEEE;
+$bg-dark: #303639;
+$hightlight-one: #FF6B34;
+//$hightlight-two: yellow/blue;
+
+//fonts
+$body-copy: 'Montserrat', sans-serif;
+$heading-copy: 'Cookie', cursive;
+$storytelling-copy: 'Eagle Lake', cursive;
+$serif-copy: 'Antic Slab', serif;
+body {
+  font-family: $body-copy;
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-copy;
+  font-weight: normal;
+}
+* {
+  margin: 0 0;
+  border: 0 0;
+  padding: 0 0;
+}
+body {
+  overflow-x: hidden;
+}
+.ie-only {
+  position: fixed;
+  background-color: #fff;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1000
+  &.active {
+    display: block;
+  }
+}
+#storytelling {
+  font-family: $storytelling-copy;
+}
+.section {
+  display: flex;
+}
+
+ nav {
+   height: 70px;
+   color: #fff;
+   background-color: rgba(19, 22, 23, 0.75);
+ }
+ #hero {
+   height: calc(100vh - 70px);
+   background-color: $bg-light;
+ }
+ #intro-section {
+   font-family: $storytelling-copy;
+
+   background-color: $bg-dark;
+ }
+footer {
+  background-color: $bg-dark;
+}
